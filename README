@@ -1,0 +1,24 @@
+Original "master" repos - O
+Fork a github repos     - F
+clone F to make a local repo - L
+
+edit files in L
+
+git commit     updates L
+git push       updates F
+pull request to get O updated
+
+in L
+git remote add upstream https://github.com/url-of-O
+
+    tags L to know that it was derived from O (it already new about F)
+
+git remote -v    to show
+
+To bring in changes from O to L
+
+get fetch upstream
+git checkout master   to make branch
+git merge upstream/master
+
+git push to push changes to F
